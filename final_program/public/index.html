@@ -10,9 +10,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <script>
-// Configuration for API endpoints - can be overridden by environment variables
-window.API_BASE_URL = window.API_BASE_URL || "/api";
-window.PREDICTION_API_URL = window.PREDICTION_API_URL || "http://127.0.0.1:8000";
+
+  // Configuration for API endpoints - can be overridden by environment variables
+//window.API_BASE_URL = window.API_BASE_URL || "/api";
+//window.PREDICTION_API_URL = window.PREDICTION_API_URL || "http://127.0.0.1:8000";
+
+window.API_BASE_URL = "https://intelligrade-api.onrender.com";
+window.PREDICTION_API_URL = "https://intelligrade-api.onrender.com"
 
 const activeUser = localStorage.getItem('activeUser');
 if(!activeUser){
